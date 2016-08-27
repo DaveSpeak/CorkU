@@ -70,19 +70,23 @@ var matchDrink=[
         {title:'Ale',like:'ale',match:'merlot'},
         {title:'Beer',like:'beer',match:'merlot'},
         {title:'Hard Lemonade or Hard Iced Tea',like:'hard-lemonade',match:'zinfandel'},
-        {title:'Other',like:'other',match:'search'}
-        ]
+        ];
 var matchFood=[
-        {title:'Red Meat',like:'red-meat',match:'cabernet-sauvignon'},
-        {title:'Poultry',like:'poultry',match:'sauvignon-blanc'},
-        {title:'Fish',like:'fish',match:'chardonnay'},
-        {title:'Light meal or appetizers',like:'light-appetizers',match:'champagne'},
-        {title:'Salty',like:'salty',match:'zinfandel'},
-        {title:'Tart',like:'tart',match:'cabernet-sauvignon'},
-        {title:'Spicy',like:'spicy',match:'petit-sirah'},
-        {title:'Sweet with chocolate',like:'sweet-chocolate',match:'zinfandel'},
-        {title:'Other sweets',like:'other-sweet',match:'search'}
-]
+        {title:'Barbeque',like:'barbeque',match:'malbec'},
+        {title:'Poultry',like:'poultry',match:'pinot-noir'},
+        {title:'Red Meat',like:'red-meat',match:'bordeaux'},
+        {title:'Cream Sauces',like:'cream-sauces',match:'chardonnay'},
+        {title:'Cold Dishes',like:'cold-dishes',match:'brachetto'},
+        {title:'Curry',like:'curry',match:'reisling'},
+        {title:'Spicy',like:'spicy',match:'chenin-blanc'},
+        {title:'Lasagna',like:'lasagna',match:'carignane'},
+        {title:'Salmon',like:'salmon',match:'pinot-noir'},
+        {title:'Halibut',like:'halibut',match:'sangiovese'},
+        {title:'Sushi',like:'sushi',match:'dry-rose'},
+        {title:'Pork',like:'pork',match:'syrah'},
+        {title:'Light (White) Chocolate',like:'white-chocolate',match:'muscat'},
+        {title:'Dark Chocolate',like:'dark-chocolate',match:'zinfandel'}
+];
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyBlMaraNlThfpxmkyToi52NGL2HXuTZjOE",
@@ -120,7 +124,7 @@ $(document).ready(function() {
                               };
                               console.log(title[j]);
                       }
-                              locationRef.set(title);
+                              eventRef.set(title);
               });
               setTimeout("pageRedirect('events.html')",2000);
               return false;
