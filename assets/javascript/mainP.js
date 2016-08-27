@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 
     $.ajax({
-            url: 'http://api.snooth.com/wines/?akey=wy1wfb4xvzcqbqhvvxf5yay3z8yt9vynuftd6n80bi9y9f56&q=wine&n=1&sr',
+            url: 'https://api.snooth.com/wines/?akey=wy1wfb4xvzcqbqhvvxf5yay3z8yt9vynuftd6n80bi9y9f56&q=wine&n=1&sr',
             method: 'GET',
         }).done(function(response) {
            console.log(JSON.parse(response));
