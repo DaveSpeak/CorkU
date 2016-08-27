@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
-  var list = ['<a href="#">Humboldt County</a>', 'Mendocino', 'Sonoma', 'Napa Valley', 
-  'Sacramento', 'San Francisco', 'Lodi', 'Livermore', 
+  var list = ['<a href="#">Humboldt County</a><br>Briceland Vineyards<br>Lost Coast Vineyards', 'Mendocino<br>Lazy Creek Cellars<br>Navarro Vineyards', 
+  'Sonoma<br>Dry Creek Vineyards<br>Bella Vineyards', 'Napa Valley<br>Domaine Carneros<br>Opus One', 
+  'Sacramento<br>Bogle Vineyards & Winery<br>Wilson Vineyards', 'San Francisco<br>Bluxome Street Winery<br>Winery Collective',
+  'Lodi<br>Abundance Vineyards<br>Dancing Fox Winery', 'Livermore', 
   'Modesto', 'SantaCruz', 'Monterey/Carmel', 'Sierra Foothills', 
   'Madera', 'Fresno', 'San Luis Obispo', 'Santa Barbara', 
   'Ventura County', 'Malibu', 'Los Angeles', 'Orange County', 
