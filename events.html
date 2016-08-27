@@ -62,7 +62,8 @@
   // var database = firebase.database();
   // var choiceRef = database.ref("/choices");
   // var eventRef = database.ref("/events");
-
+  // var locationRef = database.ref("/locations");
+  
 $(document).ready(function() {
   eventRef.on('value', function(snap){
     var temp=snap.val();

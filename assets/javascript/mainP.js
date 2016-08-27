@@ -56,7 +56,7 @@
 
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
  var dayX = "";
    var imageWine;
   var nameWine;
@@ -264,7 +264,7 @@ console.log("dayX on drop = " + dayX);
 // }
 
 
-});
+// });
 
 // drop = new Drop({
 //         target: document.querySelector('#wineDay'),
