@@ -1,4 +1,8 @@
- <title>Cork N Vine Events</title>
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Cork N Vine Events</title>
 
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -40,8 +44,8 @@
 
 
   <div class="container">
+  <div id="suggestions">
       <div class="row">
-
           <div id="eventResults">
             
 
@@ -50,7 +54,8 @@
 
 
       </div>
-    </div>
+  </div>
+  </div>
     <script>
   // var config = {
   //   apiKey: "AIzaSyBlMaraNlThfpxmkyToi52NGL2HXuTZjOE",
@@ -63,7 +68,7 @@
   // var choiceRef = database.ref("/choices");
   // var eventRef = database.ref("/events");
   // var locationRef = database.ref("/locations");
-  
+
 $(document).ready(function() {
   eventRef.on('value', function(snap){
     var temp=snap.val();

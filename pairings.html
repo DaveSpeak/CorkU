@@ -32,7 +32,7 @@
   <nav class="navbar navbar-default">
     <div class="navbar-header">
       <div><img src="assets/images/CnVheader3c.png" id="title" alt=""></div>
-      
+
        <nav class="navbar navbar-light bg-faded">
           <div class="nav navbar-nav">
             <a class="nav-item nav-link" href="index.html">Home</a>
@@ -77,7 +77,7 @@
      <div class="row">
 
         <div id='pairings'>
-</div>
+        </div>
   
 </div>
 </div>
@@ -99,9 +99,10 @@
 
 $(document).ready(function() {
   // populate drink match list
-  populateMenu('drinkmatchlist',matchDrink,'drinkMatch');
+  // populateMenu('drinkmatchlist',matchDrink,'drinkMatch');
   // populate food match list
-  populateMenu('right-side',matchFood,'foodMatch');
+  // populateMenu('right-side',matchFood,'foodMatch');
+
   choiceRef.on('value', function(snap){
     var temp=snap.val();
     console.log(temp);

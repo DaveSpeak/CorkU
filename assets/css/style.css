@@ -558,14 +558,13 @@ margin-top: 630px;
   width: 720px;
 }
 
-#suggestions {
 
-}
 #menuPairings>li.menu {
   height: 80px;
   margin-left: 45px;
   background-color: rgba(0, 0, 0, 0.75);
 }
+#eventResults>h3,
 #pairings>h3 {
  color: #660022;
  width: 715px;
@@ -579,7 +578,7 @@ margin-top: 630px;
   font-weight: 300;
   position: relative;
 }
-
+#eventResults>a>h4,
 #pairings>a>h4 {
   margin: 0;
   font-size: 16px;
@@ -589,7 +588,7 @@ margin-top: 630px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.0);
 }
-
+#eventResults>a>h4:hover,
 #pairings>a>h4:hover {
   color: #4d9900;
 }
