@@ -98,7 +98,37 @@ firebase.initializeApp(config);
 var database = firebase.database();
 var choiceRef = database.ref("/choices");
 var eventRef = database.ref("/events");
-// var locationRef = database.ref("/locations");
+var userRef = database.ref("/users");
+// Call the signInAnonymously method:
+firebase.auth().signInAnonymously().catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  userRef.push(errorCode,errorMessage);
+  return false; 
+});
+
+// onAuthStateChanged will trigger and you can get the anonymous user's account data from the User object:
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    var isAnonymous = user.isAnonymous;
+    var uid = user.uid;
+    userRef.push(isAnonymous,uid);
+    // ...
+  } else {
+    console.log('user signed out');
+    // User is signed out.
+    // ...
+  }
+  return false;
+});
+
+// var ref = new Firebase("https://corknvine-6d5a8.firebaseio.com");
+// database.ref.authAnonymously(function(error, authData) { /* Your Code */ }, {
+//   remember: "sessionOnly"
+// });
 
 $(document).ready(function() {
         // populate drink match list
@@ -166,42 +196,13 @@ function populateMenu(menuId,itemId,classId){
 }
 
 function pageRedirect(destination){
-  console.log('page redirect');
         window.location.href=destination;
         return false;
 }
 
-$('#strange').on('click', function(){
-        var select=Math.floor(Math.random()*strangeFacts.length);
-        console.log(select);
-        alert(strangeFacts[select]);
-        return false;
-});
-// $('#addLocation').on('click', function(){
-//     var searchTerm="https://www.googleapis.com/customsearch/v1?key=AIzaSyCMGfdDaSfjqv5zYoS0mTJnOT3e9MURWkU&cx=005427488377789592791:mcug_u68wl4&q=vineyard+";
-//     var terms=$('#location-input').val().trim();
-//     terms=terms.replace(/[!@#$%^&*()+=\[\]\{\}\:\;\'\",.<>?/\\|`~]/g,'');
-//     terms=terms.replace(/ /g,'+');
-//     searchTerm+=terms;
-//     console.log(searchTerm);
-//             $.ajax({url: searchTerm, method: "GET"})
-//                     .done(function(RETURN) {
-//                     var title=[];
-//                     console.log('got here');
-//                     for (var j=0;j<10;j++){
-//                             title[j] = {
-//                              name:RETURN.items[j].title,
-//                              url:RETURN.items[j].link
-//                             };
-//                             console.log(title[j]);
-//                     }
-//                             // locationRef.set(title);
-//             });
-//             return false;
-
-// });
-
-
-
-
+// $('#strange').on('click', function(){
+//         var select=Math.floor(Math.random()*strangeFacts.length);
+//         console.log(select);
+//         alert(strangeFacts[select]);
+//         return false;
 // });

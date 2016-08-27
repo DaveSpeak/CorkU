@@ -2,7 +2,7 @@
 <html>
 <head>
 
-  <title>Cork N Vine Facts</title>
+  <title>Cork N Vine Personality Match and Facts</title>
 
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -33,36 +33,173 @@
             <a class="nav-item nav-link" href="events.html">Events</a>
             <a class="nav-item nav-link" href="map.html">Vineyard Locations</a>
             <a class="nav-item nav-link" href="gifts.html">Gifts</a>
-            <a class="nav-item nav-link" href="wineDay.html">Wine of the Day</a>
           </div>
         </nav>
-   
+
     </div>
   </nav>
 
-
- <div class="container">
-      <div class="row">
-
-          <div id="factsResults">
-            
+<div id="facts-background">
+  <div class="container">
+    <div class="row">
 
 
-          </div>
+      <div class="col-lg-5">
+        <h1>Which Wine Matches Your Personality?</h1>
+      <div class="panel panel-default">
 
 
+      <div class="panel-body">
+        <div class="panel-body-default" class="table-responsive">
+          <table class="table table-bordered table-condensed" id="Personality Table" >
+            <thead>
+              <tr>
+                <th><h2>Personality Traits</h2></th>
+                <th><h2>Wine Match</h2></th>
+              </tr>
+            </thead>
+
+          <tbody>
+            <tr>
+              <td class="personality" value = "Malbec">Flexible, Tolerant, Pragmatic</td>
+  <!-- *********** want to create click - link in table cell -->
+              <!-- <td onclick="location.href='http://www.winesofargentina.org/argentina/variedades/malbec-torrontes/malbec/'">go to yourpage</td> -->
+
+              <!-- <td><a href="http://www.winesofargentina.org/argentina/variedades/malbec-torrontes/malbec/" style="display:block;">&nbsp;</a></td> -->
+
+              <td href="http://www.winesofargentina.org/argentina/variedades/malbec-torrontes/malbec/">Malbec</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Tempranillo">Realistic, Decisive, Organized</td>
+              <td>Tempranillo</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Grenache">Cooperative, Conscientious, Loyal</td>
+              <td>Grenache</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Zinfandel">Outgoing, Exuberant, Accepting</td>
+              <td>Zinfandel</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Carmenere">Warm, Imaginative, Loves to be Appreciated</td>
+              <td>Carmenere</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Merlot">Empathetic, Responsible, Helper at Heart</td>
+              <td>Merlot</td>
+            </tr>
+            <tr>
+              <td class="personality" value = "Sangiovese">Outspoken, Resourceful, Good at Reading Others</td>
+                <td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">Sangiovese</button></td>
+            </tr>
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title" id = "titleModal"></i>You are a Sangiovese Soul</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p id="pModal">Sangiovese is a red Italian wine grape variety that derives its name from the Latin sanguis Jovis, "the blood of Jove".<br>Notable regions: Tuscany, Central Italy<br>Origin: Italy<br>Sweetness: Dry, semi-sweet, or sweet.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" class = "clickable" data-dismiss="modal" >Close</button>
+                  </div>
+                </div> <!--end modal content-->
+              </div>  <!--end modal dialog-->
+            </div>  <!--end modal fade-->
+
+          </tbody>
+        </table>
+      </div> <!--panel body-->
+    </div> <!--class panel-->
+    </div> <!--class col 6-->
+  </div> <!--row-->
+
+
+<!-- *******************Section 2 Facts ************************- -->
+
+<div class = "row">
+    <div class="col-lg-5">
+      <div class="panel panel-default">
+          <h1>Random Facts</h1>
       </div>
+
+       <div class="panel-body-default" class="table-responsive">
+          <ul class="list-group">
+            <li class="list-group-item">Ancient Romans believed that seasoning was more important than the main flavour of wine. They often added fermented fish sauce, garlic, lead and absinthe.</li>
+           <li class="list-group-item">In Ancient Greece, the dinner host would always be the first to sip the wine to prove to guests that it was not poisoned.
+          </li>
+            <li class="list-group-item"> One bottle of wine contains about 1.27kg of grapes. One tonne of grapes produces about 60 cases of wine.
+          </li>
+            <li class="list-group-item">If you squeeze some grape juice into a jar and keep it a little warm, it'll turn into wine all by itself. The yeast that lives on grape skins is so irrepressible that it produces wine automatically. It may not be good wine, but it's wine nonetheless.
+          </li>
+            <li class="list-group-item">The oldest preserved bottle of wine is nearly 1700 years old and it is on display in a German museum.
+           </li>
+            <li class="list-group-item">Soy sauce contains 10 times the </ul>
+        </div> <!--panelbody-->
+      </div> <!--panel-default-->
     </div>
 
+<!-- *******************Section 3 Snubbing Wine Snobs **************- -->
+    <div class = "row">
+      <div class="col-lg-5">
+        <div class="panel panel-default">
+            <h1>Snubbing Wine Snob Facts</h1>
+        </div>
+
+          <div class="panel-body-default" class="table-responsive">
+            <ul class="list-group">
+              <li class="list-group-item">In an experiment, it was found that wine drinkers paid more for wines with hard to pronounce names. It is particularly interesting to note that participants who knew more about wine were more likely to report that difficult-to-pronounce wines were worth more money. –
+            </li>
+              <li class="list-group-item">In 2001, a panel of wine experts gave one of the lowest possible scores to an average-priced Bordeaux that was served in a cheap bottle. When it was served in an expensive bottle, it received one of the highest possible scores.
+            </li>
+              <li class="list-group-item">A $6 bottle of wine sold at Walmart has been ranked as one of the best in the world by Decanter Magazine, which covers wine and spirits. The award-winning red wine is La Moneda Reserva's Malbec, a Chilean wine whose description notes that it has a "deep purple color with violet tints, rounded and velvety tannins, complex plum, fig, and strawberry flavors and excellent length."
+            </li>
+              <li class="list-group-item">In 1976, there was a wine tasting in Paris that blindly compared Californian wines to French wines. California won and the lone reporter covering the event was blacklisted for reporting it.
+            </li>
+              <li class="list-group-item">In an experiment conducted in 2001 at the University of Bordeaux, every one of the 54 undergraduates in wine making and tasting thought they were tasting a red wine while it was actually a dyed white wine. Furthermore, when comparing identical wine of different prices, experts raved about the expensive wine while panning the cheap wine </li>
+            </ul>
+          </div> <!--panelbody-->
+        </div> <!--panel-default-->
+      </div> <!--col 6-->
+ <!--  </div>  --> <!--section 3 row-->
+<!-- *******************Section 4 Facts ************************- -->
+      <div class = "row">
+        <div class="col-lg-5">
+          <div class="panel panel-default">
+           <h1>Good to Know Facts</h1>
+          </div>
+
+          <div class="panel-body-default" class="table-responsive">
+            <ul class="list-group">
+              <li class="list-group-item">The wine cork is not for smelling. The cork is actually for examining.If you have the good fortune to sit down in a restaurant with a wine steward, you're not going to make a great impression by sniffing the cork when he hands it to you. Check to see if it's all in one piece; a fragmented or moldy cork might mean a lower quality wine. With the best wines, the cork will display the date and other information, as well.
+              </li>
+              <li class="list-group-item">The dent in the bottom of a wine bottle is called the punt or kick.
+              </li>
+              <li class="list-group-item">Wine glasses should always be held by the stem, so as not to overly heat the wine with your hand.
+              </li>
+              <li class="list-group-item"><span>"Wine legs”</span> don't actually determine quality, but only determines that the wine has a high content of alcohol. If you cover your glass the legs will disappear. The phenomenon called <span>tears of wine,</span><span> curtains,</span> or <span> church windows</span> is manifested as a ring of clear liquid, near the top of a glass of wine, from which droplets continuously form and drop back into the wine.
+              </li>
+              <li class="list-group-item">Dryness has a couple of meanings in wine. The term is commonly used to refer to the absence of sweetness, and most table wines wines are technically dry in that they lack the residual sugar that makes dessert wines sweet. The typical Merlot has the same amount of residual sugar as the typical Cabernet—virtually none.
+              </li>
+               <li class="list-group-item">Women get drunker than men. This is because women have less of an enzyme in the stomach to metabolize wine. Men have more of an enzyme that degrades alcohol, and, in general, men can safely consume twice the amount of alcohol as women because of this and other metabolic differences.
+              </li>
+            </ul>
+          </div> <!--panelbody-->
+        </div> <!--panel-default-->
+      </div> <!--col 6-->
+    </div>  <!--section 4 row-->
+
+  </div>
+</div>
 
 
-<!-- <div class="row">
-      <footer class = "sticky">
-        <footer id = "foot-content">
-          <h6>&copy; 2016 Cork N Vine</h6>
-        </footer> 
-      </footer> 
-    </div> -->
+
+
 
 
 </body>
