@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Cork N Vine dummy results display page</title>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<!--   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ -->  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Inknut+Antiqua:800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Sahitya:700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<div>
+<div class="row" style="margin:50px;">
+  <h1>Here's the wines we think you'll like:</h1><br>
+</div>
+<br>
+<div class="row" style="margin:50px; color:black;" id='dummyResults'>
+
+  
+</div>
+</div>
+<!--   <script type="text/javascript" src="assets/javascript/app.js"></script>
+ -->  
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+ <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBlMaraNlThfpxmkyToi52NGL2HXuTZjOE",
+    authDomain: "corknvine-6d5a8.firebaseapp.com",
+    databaseURL: "https://corknvine-6d5a8.firebaseio.com",
+    storageBucket: "corknvine-6d5a8.appspot.com",
+  };
+  firebase.initializeApp(config);
+var database = firebase.database();
+var choiceRef = database.ref("/choices");
+
+$(document).ready(function() {
+  choiceRef.on('value', function(snap){
+    var temp=snap.val();
+    for (j=0;j<temp.length;j++){
+      // console.log(temp[j].name, temp[j].url);
+      var inserthtml=$('<h2>').html(temp[j].name).append('<br>');
+      // var inserthtml=$('<h2>').html(temp[j].name).append('<br>',$('<a>').attr('href', temp[j].url));
+      // inserthtml.append($('<a>')).attr('href',temp[j].url);
+      $('#dummyResults').append(inserthtml);
+      inserthtml=$('<a>').attr('href',temp[j].url).html('<h3>'+temp[j].url);
+      $('#dummyResults').append(inserthtml);
+   }
+  });
+});
+</script>
+</body>
+</html>

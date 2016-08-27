@@ -1,0 +1,614 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body, html  {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  height: auto;
+  background-image: url(../images/winebottles.png);
+}
+
+.container  {
+  width: 100%;
+}
+
+#main {
+  float:left;
+  max-width: 650px;
+}
+
+nav.navbar.navbar-default {
+  background-color: rgba(0, 0, 0, 0.65);
+  min-height: 100px;
+}
+nav.navbar.navbar-light {
+  margin-left: 35px;
+}
+.navbar {
+  min-height: 0;
+  margin-bottom: 1px; 
+}
+
+#title {
+  margin-left: 200px;
+}
+
+.nav.navbar-nav {
+  margin-left: 140px;
+}
+
+a.nav-item.nav-link {
+  color: #fff9e6;
+/*  padding-left: 30px;
+*/  padding-right: 30px;
+  text-decoration: none;
+}
+
+a.nav-item.nav-link:hover {
+  color: #4d9900;
+}
+.col-xs-7 {
+ 
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.col-xs-4 {
+  float: right;  
+  width: 250px;
+} 
+
+.col-xs-3 {
+  background-color: #ffffff;
+  margin-right: 80px;
+  margin-left: 25px;
+}
+
+.col-xs-3>a>img {
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  width: 220px;
+}
+
+/*h1,*/
+h2 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  text-align: center;
+  color: #fff9e6;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/*h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  margin-left: 25%;
+  margin-top: 0px;
+  position: absolute;
+}*/
+
+h3 {
+  color: #660022;
+  text-align: center;
+  position: absolute;
+  background-color: rgba(255,255,255, 0.55);
+  -webkit-text-stroke: 1px #660022;
+  font-size: 26px;
+  font-family: 'IM Fell DW Pica SC', serif;
+  font-weight: 300;*/
+}
+
+h4  {
+  margin-top: -100px;
+  margin-bottom: 35px;
+  background-color: #2b3e50;
+  padding: 10px 10px;
+  width: 220px;
+  text-align: center;
+  color: #777777;
+  position: relative;
+}
+h6 {
+  font-size: 14px;
+  font-family: Arial;
+  padding-top: 10px;
+}
+
+#region {
+    margin-left: 95px;
+    margin-top: 80px;
+}
+
+#types {
+  margin-left: 90px;
+  margin-top: 90px;
+  width: 170px;
+  text-align: center;
+}
+
+#events {
+  margin-left: 370px;
+  width: 160px;
+  margin-top: -140px;
+}
+
+#main-list>li {
+  position: relative;
+  float: left;
+}
+
+ul.main>li {
+  background: rgba(0, 0, 0, 0.75);
+  padding-left:10px;
+  margin-bottom: 15px;
+}
+
+li {
+  width: 650px;
+}
+
+ul.main>li {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+li.menu {
+  height: 80px;
+  margin-left: 15px;
+}
+
+button.dropdown-toggle {
+  float: left;
+  margin-left: 10px;
+  margin-right: 20px;
+  padding: 5px;
+  color: #660022;
+  background-color: #fff9e6;
+}
+
+.dropdown-menu {
+  width: 285px;
+  margin-left: 10px;
+  padding: 0;
+  background-color: #fff9e6;
+}
+
+#right-side {
+  width: 255px;
+  margin-left: 325px;
+}
+
+.dropdown-menu>li>a:hover {
+  width: 283px;
+  background-color: #660022;
+}
+#right-side.dropdown-menu>li>a:hover {
+  width: 253px;
+  background-color: #660022;
+}
+
+li>a {
+   color: #a54aaa;
+   width: 260px;
+}
+
+#vineyards {
+  margin-left: 370px;
+  width: 170px;
+  margin-top: 65px;
+}
+
+input#location-input {
+  width: 150px;
+  height: 25px;
+  font-size: 12px;
+  font-family: Arial;
+  text-align: center;
+}
+
+button#addLocation {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+#strange {
+  margin-left: 85px;
+  width: 180px;
+  margin-top: 80px;
+}
+
+ul.sidebar>li {
+  background: rgba(0, 0, 0, 0.75);
+  width: 190px;
+  height: 190px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.img-group {
+  margin-left: 75px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#giftsI {
+  margin-top: 70px;
+  margin-left: 20px;
+}
+
+#dayWine>img,
+#gifting>img {
+  border-radius: 6px;
+}
+
+#wineDay {
+  margin-top: 72px;
+  width: 150px;
+}
+
+#randomQ {
+  margin-top: 50px;
+  margin-left: 25px;
+  width: 105px;
+}
+
+#quote-back {
+  height: 100%;
+  min-height: 150px;
+  width: 150px;
+  line-height: 20px;
+  padding-top: 10px;
+  background-color: #fff9e6;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+li>p {
+  margin: 20px 0px 5px 5px;
+}
+
+li>a>img {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 15px 10px 25px 10px;
+}
+
+.img-responsive {
+  margin-left: 10px;
+}
+
+.placeholder {
+  font-size: 14px;
+  color: #000000;
+}
+
+ .form-control  {
+  border: 1px solid #777777
+ }
+
+ .card-container {
+  cursor: pointer;
+  height: 150px;
+  position: relative;
+  width: 150px;
+}
+
+.card {
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card .front {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card .back {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  background: #eaeaed;
+  color: #000000;
+  line-height: 100px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.back>a>img {
+  border-radius: 6px;
+}
+
+.drop-target .drop-content {
+    display: none;
+}
+
+.example-inner {
+    margin: 10em;
+    border: 0.4em solid black;
+    padding: 0.4em 0.6em;
+    text-align: center;
+    display: block;
+    width: 5em;
+}
+
+div.drop-content {
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #fff9e6;
+  min-height: 150px;
+  min-width: 150px;
+  margin: 10px;
+  z-index: 2;
+}
+
+/*#mainP {
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+  margin-top: 30px;
+  font-size: 20px;
+
+}
+
+#mainP>a {
+  color: #fff9e6;
+  text-decoration: none;
+}
+#mainP>a:hover {
+  color: #b2b266;
+  }*/
+
+#humboldt,
+#mendocino,
+#sonoma,
+#napa,
+#sacramento,
+#sanFrancisco,
+#lodi,
+#livermore,
+#modesto,
+#santaCruz,
+#monterey,
+#sierra,
+#madera,
+#fresno,
+#sanLuis,
+#santaBarbara,
+#venturaCounty,
+#malibu,
+#losAngeles,
+#orangeCounty,
+#palmSprings,
+#sanDiego {
+  position: absolute;
+}
+#sanFrancisco,
+#santaCruz,
+#malibu {
+  background-color: #fff9e6;
+}
+#humboldt {
+margin-left: 20px;
+margin-top: 75px;
+}
+#mendocino {
+margin-left: 40px;
+margin-top: 160px;
+}
+#sonoma {
+margin-left: 60px;
+margin-top: 220px;
+}
+#napa {
+margin-left: 100px;
+margin-top: 230px;
+}
+#sacramento {
+margin-left: 155px;
+margin-top: 230px;
+}
+#sanFrancisco {
+margin-left: 80px;
+margin-top: 300px;
+}
+#lodi {
+margin-left: 170px;
+margin-top: 270px;
+}
+#livermore {
+margin-left: 140px;
+margin-top: 300px;
+}
+#modesto {
+margin-left: 190px;
+margin-top: 290px;
+}
+#santaCruz {
+margin-left: 110px;
+margin-top: 360px;
+}
+#monterey {
+margin-left: 140px;
+margin-top: 395px;
+}
+#sierra {
+margin-left: 180px;
+margin-top: 170px;
+}
+#madera {
+margin-left: 265px;
+margin-top: 325px;
+}
+#fresno {
+margin-left: 265px;
+margin-top: 360px;
+}
+#sanLuis {
+margin-left: 195px;
+margin-top: 455px;
+}
+#santaBarbara {
+margin-left: 205px;
+margin-top: 525px;
+}
+#venturaCounty {
+margin-left: 275px;
+margin-top: 525px;
+}
+#malibu {
+margin-left: 305px;
+margin-top: 580px;
+}
+#losAngeles {
+margin-left: 330px;
+margin-top: 535px;
+}
+#orangeCounty {
+margin-left: 370px;
+margin-top: 585px;
+}
+#palmSprings {
+margin-left: 450px;
+margin-top: 575px;
+}
+#sanDiego {
+margin-left: 430px;
+margin-top: 630px;
+}
+
+#map { 
+  height: 700px; 
+  margin-left: 25%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#mapContainer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding-top: 1px;
+
+}
+
+#suggestions,
+#wineTypes {
+  background: rgba(0, 0, 0, 0.75);
+  /*height: 600px;*/
+  width: 720px;
+  padding-left:10px;
+  margin-bottom: 15px;
+  margin-left: 130px;
+}
+
+#wineTypes>li {
+  width: 700px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+#wineTypes>li>p {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+#wineTypes>h5 {
+  padding-bottom: 5px;
+  color: #660022;
+  text-align: center;
+  width: 700px;
+  background-color: rgba(255,255,255, 0.55);
+  -webkit-text-stroke: 1px #660022;
+  font-size: 26px;
+  font-family: 'IM Fell DW Pica SC', serif;
+  font-weight: 300;
+}
+
+#menuPairings {
+  margin-left: 150px;
+  width: 720px;
+}
+
+#suggestions {
+
+}
+#menuPairings>li.menu {
+  height: 80px;
+  margin-left: 45px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+#pairings>h3 {
+ color: #660022;
+ width: 715px;
+ margin-left: 10px;
+ padding: 5px;
+  text-align: center;
+  background-color: rgba(255,255,255, 0.75);
+  -webkit-text-stroke: 1px #660022;
+  font-size: 18px;
+  font-family: 'IM Fell DW Pica SC', serif;
+  font-weight: 300;
+  position: relative;
+}
+
+#pairings>a>h4 {
+  margin: 0;
+  font-size: 16px;
+  padding: 10px 10px;
+  width: 720px;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+#pairings>a>h4:hover {
+  color: #4d9900;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+footer.sticky {
+/*  display: table-row;
+*/float: left;
+  width: 100%;
+}
+ footer#foot-content {
+    background-color: rgba(0, 0, 0, 0.75);
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    color: #fff9e6;
+    bottom:0;
+    width: 100%;
+    height:40px;
+    text-align: center;
+}

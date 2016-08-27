@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Cork N Vine Pairings</title>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+
+  <link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Inknut+Antiqua:800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Sahitya:700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <div><img src="assets/images/CnVheader3c.png" id="title" alt=""></div>
+
+       <nav class="navbar navbar-light bg-faded">
+          <div class="nav navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="types.html">Types of Wine</a>
+            <a class="nav-item nav-link" href="facts.html">Facts</a>
+            <a class="nav-item nav-link" href="events.html">Events</a>
+            <a class="nav-item nav-link" href="map.html">Vineyard Locations</a>
+            <a class="nav-item nav-link" href="gifts.html">Gifts</a>
+            <a class="nav-item nav-link" href="wineDay.html">Wine of the Day</a>
+          </div>
+        </nav>
+   
+    </div>
+  </nav>
+
+    <div class="container">
+      <div class="row">
+        <div id="menuPairings">
+
+          <li class="menu">
+
+            <div class="dropdown">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown">What wine would I like if I usually drink:
+                <span class="caret"></span></button>
+
+                <ul class="dropdown-menu" id="drinkmatchlist"></ul>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown">Match wines with this type of food:
+                <span class="caret"></span></button>
+                  <ul class="dropdown-menu" id="right-side"></ul>
+            </div>
+          </li>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+    <div id="suggestions">
+     <div class="row">
+
+        <div id='pairings'>
+</div>
+  
+</div>
+</div>
+    </div>
+
+<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+ <script>
+
+  var config = {
+    apiKey: "AIzaSyBlMaraNlThfpxmkyToi52NGL2HXuTZjOE",
+    authDomain: "corknvine-6d5a8.firebaseapp.com",
+    databaseURL: "https://corknvine-6d5a8.firebaseio.com",
+    storageBucket: "corknvine-6d5a8.appspot.com",
+  };
+  firebase.initializeApp(config);
+var database = firebase.database();
+var choiceRef = database.ref("/choices");
+
+$(document).ready(function() {
+  // populate drink match list
+  populateMenu('drinkmatchlist',matchDrink,'drinkMatch');
+  // populate food match list
+  populateMenu('right-side',matchFood,'foodMatch');
+  choiceRef.on('value', function(snap){
+    var temp=snap.val();
+    console.log(temp);
+    for (j=0;j<temp.length;j++){
+      // console.log(temp[j].name, temp[j].url);
+      var inserthtml=$('<h3>').html(temp[j].name).append('<br>');
+      // var inserthtml=$('<h2>').html(temp[j].name).append('<br>',$('<a>').attr('href', temp[j].url));
+      // inserthtml.append($('<a>')).attr('href',temp[j].url);
+      $('#pairings').append(inserthtml);
+      inserthtml=$('<a>').attr('href',temp[j].url).html('<h4>'+temp[j].url);
+      $('#pairings').append(inserthtml);
+   }
+  });
+});
+</script>
+
+
+
+<!-- <div class="row">
+      <footer class = "sticky">
+        <footer id = "foot-content">
+          <h6>&copy; 2016 Cork N Vine</h6>
+        </footer> 
+      </footer> 
+    </div> -->
+
+
+
+</body>
+</html>
