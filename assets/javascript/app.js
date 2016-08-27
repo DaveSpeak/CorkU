@@ -98,7 +98,7 @@ firebase.initializeApp(config);
 var database = firebase.database();
 var choiceRef = database.ref("/choices");
 var eventRef = database.ref("/events");
-var locationRef = database.ref("/locations");
+// var locationRef = database.ref("/locations");
 
 $(document).ready(function() {
         // populate drink match list
